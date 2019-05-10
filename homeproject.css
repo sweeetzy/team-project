@@ -1,0 +1,154 @@
+/*li {list-style: none;}
+
+/*a {text-decoration: none;}*/
+/*header{
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}*/
+#wrap {
+    /* margin-top = header height */
+    margin-top: 60px;
+  }
+
+.logo {
+    display: inline-block;
+    height: 36px;
+    margin: 12px 0 12px 25px;
+    color: rgb(9, 65, 52);
+    font-family: 'Permanent Marker', cursive;
+    font-size:60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left; /* 로고가 정중앙에 오길래 수정*/
+}
+
+.logo > img { height: 36px; }
+nav {
+    float: right;
+}
+
+.nav-items {
+    margin-right: 20px;
+}
+
+.nav-items > li {
+    display: inline-block; /* 가로정렬 */
+}
+
+.nav-items > li > a {
+    line-height: 60px; /* for Vertical Centering */
+    padding: 0 30px;   /* nav item간 간격 */
+    color: rgb(247, 176, 44);
+}
+
+.nav-items > li > a:hover {
+    color: rgb(255, 102, 0);
+}
+  
+/* toggle navigation icon */
+.nav-toggle:checked ~ .navicon > .navicon-bar {
+    background: transparent;
+}
+
+.nav-toggle:checked ~ .navicon > .navicon-bar::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav-toggle:checked ~ .navicon > .navicon-bar::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 25px;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0rem auto;
+    margin-right: 0;
+    margin-left: 0;
+    display: grid;
+    grid-template-areas: "header header header"         
+                         "main main main"
+                         "footer footer footer";
+    grid-template-rows: 1fr 7fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;                    
+}
+
+.cell-1 {
+    background-color: beige;
+    grid-area: header;
+    font-family: 'Nanum Pen Script', cursive;
+    text-align: center;
+    
+}
+
+.cell-1 li {
+    text-align: left;
+   
+}
+
+.cell-2 {
+    background: rgb(254, 200, 198);
+    grid-area: main;
+    font-family: 'Nanum Pen Script', cursive;
+    text-align: center;
+}
+
+/*footer에 바로 스타일 적용했었는데 .cell-3으로 통일함*/
+.cell-3 {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    padding: 25px 0;
+    line-height: 60px;
+    font-size: 40px;
+    grid-area: footer;
+    text-align: center;
+    color: rgb(255, 60, 0);
+    font-family: 'Black Han Sans', sans-serif;
+    background-color: beige;
+}
+
+.cell {
+    color: black;
+    font-size: 2.5rem;
+    padding: 4rem;
+    
+}
+
+.cell h4 {
+    color: green;
+    font-size: 4.0rem;
+}
+
+p {
+    color:#0C4B33;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+img {
+  list-style-type: none;
+  background-color: #44B78B;
+  text-align: center;
+  padding: 10px;
+  margin: 2px;
+  height: 200px;
+  border-radius: 200px;
+}
+/*h4 폰트 따로 지정해주려고 새로 만듦*/
+h4 {
+    font-family: 'Do Hyeon', sans-serif;
+}
